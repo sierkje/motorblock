@@ -1,0 +1,23 @@
+{
+  "name": "@sierkje/motorblock",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "docs": "typedoc",
+    "format": "prettier --list-different --ignore-path .eslintignore --write .",
+    "format:check": "prettier --ignore-path .eslintignore --check .",
+    "version": "node ./scripts/version"
+  },
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "jsonfile": "^6.1.0",
+    "prettier": "^3.5.3",
+    "prettier-plugin-packagejson": "^2.5.10",
+    "semver": "^7.7.1"
+  },
+  "packageManager": "pnpm@10.10.0",
+  "engines": {
+    "node": ">=22.0.0",
+    "pnpm": ">=10.10.0"
+  }
+}
