@@ -1,0 +1,53 @@
+{
+  "name": "@motorblock/document",
+  "version": "0.0.1",
+  "description": "Document components for React Router apps",
+  "bugs": {
+    "url": "https://github.com/sierkje/motorblock/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sierkje/motorblock",
+    "directory": "components/document"
+  },
+  "license": "MIT",
+  "sideEffects": false,
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist.js",
+    "LICENSE.md",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "wireit",
+    "typecheck": "tsc"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.2",
+    "react": "^19.1.0",
+    "react-router": "^7.5.3",
+    "tsup": "^8.4.0",
+    "typescript": "^5.1.0",
+    "wireit": "^0.14.12"
+  },
+  "peerDependencies": {
+    "react-router": "^7.5.3"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "wireit": {
+    "build": {
+      "command": "tsup",
+      "files": [
+        "lib/index.tsx",
+        "tsconfig.json"
+      ],
+      "output": [
+        "dist/**"
+      ]
+    }
+  }
+}
